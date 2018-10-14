@@ -2,11 +2,12 @@
   "name": "crudmern",
   "version": "1.0.0",
   "description": "Book App CRUD ",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "babel-node server",
+    "start": "node dist",
     "server": "nodemon --exec babel-node server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx babel server --out-dir dist"
   },
   "author": "giang & thien",
   "license": "ISC",
@@ -17,7 +18,9 @@
     "mongoose": "^5.3.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
   }
 }
