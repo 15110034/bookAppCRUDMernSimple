@@ -10,7 +10,7 @@ Clone and install
 git clone https://github.com/15110034/bookAppCRUDMernSimple.git my-app
 cd my-app
 npm install or yarn
-cd web
+cd client
 npm install or yarn
 ```
 
@@ -25,7 +25,7 @@ Start web dev ( New terminator )
 
 ```bash
 cd my-app
-cd web
+cd client
 npm run start or yarn start
 ```
 
@@ -33,7 +33,7 @@ Deploy to now.sh
 
 ```bash
 cd my-app
-cd web
+cd client
 npm run build or yarn build
 cd ..
 npm run build or yarn build
