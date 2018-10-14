@@ -13,10 +13,10 @@ ConnectDatabase();
 const port = process.env.PORT || 5000;
 app.use("/api/books", bookRoutes);
 
-app.use(express.static(path.resolve(__dirname, "../web", "build")));
+app.use(express.static(path.resolve(__dirname, "../client", "build")));
 
 app.get("/*", function(req, res) {
-  res.sendFile(path.resolve(__dirname, "../web", "build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "../client", "build", "index.html"));
 });
 
 app.listen(port, () => console.log(`server is listening on port ${port}`));
